@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce audio product page-array of bojects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo">audio store</div>
+        <button class="cart-btn" onclick="toggleCart()">
+            cart
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </div>
+
+    <div class="hero">
+        <h1>premium audio products</h1>
+        <p>quality sound for everyone</p>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="cart-modal" id="cartModle">
+        <div class="cart-content">
+            <div class="cart-header"></div>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <span>total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="close-btn" onclick="toggleCart()">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>
